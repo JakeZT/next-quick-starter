@@ -1,0 +1,13 @@
+{
+	"presets": ["next/babel"],
+	"plugins": [
+		["macros"],
+		["styled-components", { "ssr": true }]
+		// ["import", { "libraryName": "antd-mobile", "libraryDirectory": "es", "style": true }]
+	],
+	"env": {
+		"production": {
+			"plugins": ["transform-remove-console", "babel-plugin-macros"]
+		}
+	}
+}
